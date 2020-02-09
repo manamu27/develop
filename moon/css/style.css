@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 2;
+}
+
+/*ブラウザ規定スタイル解除*/
+
+p,h1,h2{
+  margin-top: 0;
+}
+img{
+  vertical-align: bottom;
+}
+
+#wrap{
+  clear: both;
+}
+
+.content{
+  width: 960px;
+  margin:0;
+}
+
+
+/*footer*/
+
+footer{
+  text-align: right;
+  color:#bcbcbc;
+  padding: 50px;
+  font-size: 10px;
+}
+
+/*index page */
+
+#moon h1{
+  font-size: 50px;
+  line-height: 1;
+  color: #ffffff;
+  margin-left: 50px;
+  /*字体を追加*/
+}
+
+#moon p{
+  margin-left: 50px;
+}
+
+#moon .content{
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+#moon{
+  background-image: url(../images/back_moon.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+ background-size: cover; 
+}

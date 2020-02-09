@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/*  CSSファイルの一番上は文字コードを指定する　*/
+  
+/*  ページの余白を0にする　*/
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #cccccc;
+    color: #333333;
+    font-size: 15px;
+    line-height: 2;
+}
+
+/* デフォルトの見出しと段落のマージンをなくす*/
+p,h1,h2.h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+/*画像の下部の余白をなくす*/
+img {
+  vertical-align: bottom:
+}
+
+/*float属性の左右の回り込みを解除する*/
+#wrap{
+  clear:both;
+  background-color: #ffffff;
+  margin-top: 300px;
+  padding: 35px;
+}
+
+.content{
+  width: 860px;
+  margin: 0 auto;
+}
+
+/*footer*/
+
+footer{
+  text-align: center;
+  color: #ffffff;
+  padding:10px 0;
+  background-color: #767671;
+}
+
+footer small{
+  font-size: 12px;
+}
+
+#about {
+  background-image: url(../images/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+#mein-center{
+  width: 940;
+  margin 0 auto;
+}
+
+h1{
+  font-family: 'Bitter',serif;
+  font-size:36px;
+  border-bottom: 1.5px solid #FF6A00;
+}
+
+h2{
+  font-family:'Bitter',serif;
+  font-size: 24px;
+}
+
+/*疑似要素*/
+.icon:before {
+  content: "";
+  padding-right: 25px;
+  border-left: 15px solid #FF6A00;
+}
+
+#about .profile-txt {
+  float:left;
+}
+
+#about .profile-txt span {
+  font-weight: bold;
+}
+
+#about .profile-image {
+  float: right;
+}
+
+/*ブロック要素にして float解除できるようにする*/
+.clearfix:after {
+  content: "";
+  display: block ;
+  clear: both;
+}
+
+section{
+  margin-bottom: 35px;
+}
+
+#about {
+  background-image: url(../images/flight.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+#about table{
+  margin-bottom: 50px;
+}
+#about table th{
+  text-align: left;
+}
+
+#about table td{
+  text-align: left;
+  padding-left: 30px;
+}
+
+/*hobby*/
+.hobby figure {
+	position: relative;
+	display: inline-block;
+	margin-right: 5px;
+	width: 350px;
+}
+
+.hobby figure img {
+		max-width: 100%;
+        margin: 0;
+		vertical-align: top;
+}
+
+.hobby figure figcaption {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 10px 10px;
+		font-size: 80%;
+		color:#ffffff;
+		background: #FF6A00;
+}
+
+@media screen and (max-width:600px){
+  /*画面サイズが600px以下の場合に適用*/
+  
+  body{
+    font-size:3.5vw;
+  }
+  
+  h1{
+    font-size: 7.2vw;
+  }
+  
+  h2{
+    font-size: 6vw;
+  }
+
+  #wrap{
+    margin-top: 230px;
+    padding:35px 10px 0;
+  }
+  
+  .content{
+    width:100%;
+  }
+  
+  .main{
+    float:none;
+    width: auto;
+    margin: 0 5%;
+  }
+  
+  #about {
+    background-image: url(../images/flight_mobile.png);
+  }
+
+}
