@@ -18,14 +18,28 @@ p,h1,h2.h3,h4,h5,h6 {
 
 /*画像の下部の余白をなくす*/
 img {
-  vertical-align: bottom:
+  vertical-align: bottm:
+}
+
+#header {
+text-align:center;
+height: 250px;
+padding: 30px;
+background: -webkit-linear-gradient(159deg, rgb(237, 93, 22), rgb(225, 121, 241));
+background: linear-gradient(159deg, rgb(237, 93, 22), rgb(225, 121, 241));
+}
+
+.header-title{
+  display: inline-block;
+  font-family: 'Bitter',serif;
+  color: #ffffff;
+  font-size: 75px;
 }
 
 /*float属性の左右の回り込みを解除する*/
 #wrap{
   clear:both;
   background-color: #ffffff;
-  margin-top: 300px;
   padding: 35px;
 }
 
@@ -45,14 +59,6 @@ footer{
 
 footer small{
   font-size: 12px;
-}
-
-#about {
-  background-image: url(../images/about-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
 }
 
 #mein-center{
@@ -159,10 +165,18 @@ section{
   h2{
     font-size: 6vw;
   }
+  
+  #header{
+    height: 100px;
+    text-align: left;
+    padding-left: 10vw;
+  }
 
+  .header-title{
+    font-size: 50px;
+  }
   #wrap{
-    margin-top: 230px;
-    padding:35px 10px 0;
+    padding:35px 10px 0 10px;
   }
   
   .content{
@@ -173,10 +187,6 @@ section{
     float:none;
     width: auto;
     margin: 0 5%;
-  }
-  
-  #about {
-    background-image: url(../images/flight_mobile.png);
   }
 
 }
