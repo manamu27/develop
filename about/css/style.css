@@ -188,5 +188,9 @@ section{
     width: auto;
     margin: 0 5%;
   }
+  
+  section{
+  margin-bottom: 0;
+}
 
 }
